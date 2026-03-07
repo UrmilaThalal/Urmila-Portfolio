@@ -1,0 +1,165 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  
+    <header>
+            <!-- Navbar -->
+ <nav class="navbar">
+    <div class="logo">Urmila Thalal</div>
+    <ul class="nav-links">
+     <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+ </nav>
+
+ <!-- Hero Section -->
+  <div class="hero">
+  <div class="hero-content">
+
+    <div class="hero-text">
+      <h1 class="main-name">Urmila Thalal</h1>
+
+      <p class="subtitle">Aspiring Full Stack Developer</p>
+
+      <p>Building modern and responsive web applications using HTML, CSS, and JavaScript</p>
+
+      <!-- Button Container -->
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+      </div>
+
+    </div>
+
+    <div class="hero-image">
+      <img src="myphoto.jpeg" alt="Profile Photo">
+
+      <div class="social-icons">
+        <a href="https://github.com/UrmilaThalal" target="github">
+          <img src="image.png" alt="GitHub">
+        </a>
+
+        <a href="https://www.linkedin.com/in/urmila-thalal-ab69313a8" target="linkedin">
+          <img src="linkedln.png" alt="LinkedIn">
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+ <!-- About me -->
+ <section id="about" class="section">
+     <h2>About me</h2>
+    <div class="About-me">
+        <p>
+ Hello,Iˇm Urmila Thalal,an aspiring Full Stack Developer.I specialize in front-end development.
+ As a beginner, I am passionate about learning new technologies and continuously improving through
+  hands-on practice and real-world projects. I did an internship at WorldLink in Mahendranagar, 
+  where I gained practical experience in networking and teamwork. I also built a multimedia web 
+  project using HTML and CSS, which includes sections like Audio, Video, Music, and Photos,
+   allowing users to explore different types of content interactively.
+        </p>
+    </div>
+
+</section>
+
+ <!-- Skills Section -->
+ <section id="skills" class="section">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+    </div>
+
+ </section>
+
+
+ <!-- Projects Section -->
+ <section id="projects" class="section light">
+    <h2>My Project</h2>
+
+    <div class="project-card">
+        <h3>Multimedia Website Project</h3>
+        <p>
+         Built using HTML and CSS.It includes Audio, Video,Music, and Photo sections 
+         allowing users to explore multimedia content interactively.The project focuses on
+         presenting different types of multimedia content in an organized way, making it
+         easy for users to navigate and interact with media elements. The main objective
+         of this project was to understand how multimedia is integrated into websites and
+         to improve my skills in creating structured and visually appealing web pages.
+
+        </p>
+        <p class="tech"> Tech:HTML • CSS </p>
+    </div>
+ </section>
+
+  <!-- Contact Section -->
+<section id="contact" class="section contact">
+  <h2>Contact Me</h2>
+
+  <div class="contact-container">
+
+    <!-- Left Side Contact Info -->
+    <div class="contact-info">
+      <p>📞 +977 9848881987</p>
+      <p>📧 utsabithalal@gmail.com</p>
+      <p>📍 Pepsicola, Kathmandu</p>
+    </div>
+
+    <!-- Right Side Contact Form -->
+    <div class="contact-form">
+      <form onsubmit="return validateEmail()">
+
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="email" placeholder="Your Email" required>
+
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+
+      </form>
+    </div>
+
+  </div>
+
+</section>
+
+ <footer>
+    © 2026 Urmila Thalal | All Rights Reserved
+ </footer>
+
+<!-- Email Validation Script -->
+ 
+ </header>
+ <script>
+function validateEmail(){
+
+let email = document.querySelector("input[type='email']").value;
+
+if(
+    email.endsWith("@gmail.com") ||
+    email.endsWith("@hotmail.com") ||
+    email.endsWith("@yahoo.com")
+){
+    return true;
+}
+else{
+    alert("Email must be @gmail.com, @hotmail.com or @yahoo.com");
+    return false;
+}
+
+}
+</script>
+ </body>
+ </html>
