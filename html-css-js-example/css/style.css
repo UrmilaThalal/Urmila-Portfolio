@@ -1,0 +1,39 @@
+body{
+font-family: Arial, sans-serif;
+margin:20px;
+}
+
+.nav{
+list-style-type: disc;
+}
+
+.nav li{
+margin:5px 0;
+}
+
+img{
+width:300px;
+margin:10px 0;
+}
+
+.card{
+border:1px solid #ccc;
+padding:15px;
+width:320px;
+margin-top:10px;
+}
+
+button{
+padding:6px 12px;
+background-color:#f0f0f0;
+border:1px solid #999;
+cursor:pointer;
+}
+
+button:hover{
+background-color:#ddd;
+}
+
+#message{
+margin-top:8px;
+}
