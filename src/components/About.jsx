@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-import myphoto from '../assets/myphoto.jpeg';
+
 
 const About = () => {
   return (
@@ -28,10 +28,10 @@ const About = () => {
                   }}
                 />
                 <img 
-                  src={myphoto} 
+                  src={`${import.meta.env.BASE_URL}myphoto.jpeg`}
                   alt="Urmila Thalal" 
                   className="img-fluid rounded-circle position-relative shadow"
-                  style={{ width: '280px', height: '280px', objectFit: 'cover', border: '4px solid var(--glass-border)', zIndex: 1 }}
+                  style={{ width: '320px', height: '320px', objectFit: 'cover', border: '4px solid var(--glass-border)', zIndex: 1 }}
                   onError={(e) => { e.target.src = "https://ui-avatars.com/api/?name=Urmila+Thalal&background=8b5cf6&color=fff&size=280"; }}
                 />
               </div>
