@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
+import myphoto from '../assets/myphoto.jpeg';
 
 const About = () => {
   return (
@@ -27,7 +28,7 @@ const About = () => {
                   }}
                 />
                 <img 
-                  src="/archive/myphoto.jpeg" 
+                  src={myphoto} 
                   alt="Urmila Thalal" 
                   className="img-fluid rounded-circle position-relative shadow"
                   style={{ width: '280px', height: '280px', objectFit: 'cover', border: '4px solid var(--glass-border)', zIndex: 1 }}
@@ -38,7 +39,7 @@ const About = () => {
             <Col lg={7}>
               <div className="glass-card p-4 p-md-5">
                 <p className="fs-5 text-white-50 lh-lg mb-0">
-                  I am a Frontend Developer and BSc CSIT student with a strong interest in building responsive and user-friendly web applications. I enjoy turning ideas into practical web solutions using modern technologies. Along with frontend development, I have experience working with backend development, REST APIs, databases, deployment, and version control through academic and personal projects. I am continuously improving my technical skills and looking for opportunities to contribute, learn, and grow as a software developer.
+                  A BSc CSIT student with a strong interest in building responsive and user-friendly web applications. I enjoy turning ideas into practical web solutions using modern technologies. Along with frontend development, I have experience working with backend development, REST APIs, databases, deployment, and version control through academic and personal projects. I am continuously improving my technical skills and looking for opportunities to contribute, learn, and grow as a software developer.
                 </p>
               </div>
             </Col>
